@@ -1,5 +1,5 @@
 <?php
-    $text = "Ciao php! Che piacere";
+    $text = "ciao php! Che piacere";
 
     $fromUser = $_GET["fromUser"]
 ?>
@@ -20,7 +20,7 @@
 
         <p>Lunghezza del paragrafo sopra: <?php echo strlen($text) ?></p>
 
-        <h1>Variabile passata con GET: <?php echo str_replace("a", "***", $fromUser ) ?> </h1>
+        <h1>Variabile passata con GET: <?php echo str_replace($fromUser, "***", $text ) ?> </h1>
 
         <p>Parola originale: <?php echo $fromUser ?> <br> Lunghezza: <?php echo strlen($fromUser) ?> </p>
     </main>
